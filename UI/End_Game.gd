@@ -8,4 +8,4 @@ func _ready():
 
 func _on_Play_pressed():
 	Global.reset()
-	var _scene = get_tree().change_scene("res://Game.tscn")
+	var _scene = get_tree().change_scene("res://UI/Selector.tscn")
