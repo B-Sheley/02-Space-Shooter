@@ -3,7 +3,7 @@ extends KinematicBody2D
 
 onready var Enemy_Bullet_K = load("res://Enemy/Enemy_Bullet_K.tscn")
 var nose = Vector2(0,-60)
-var health = 40
+var health = 50
 var score = 50
 
 func _ready():

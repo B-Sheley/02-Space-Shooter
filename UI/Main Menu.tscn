@@ -25,4 +25,18 @@ margin_right = 75.0
 margin_bottom = 20.0
 text = "Play"
 
+[node name="Label2" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -204.5
+margin_top = -250.0
+margin_right = 204.5
+margin_bottom = -200.0
+text = "Free Assets Acquired on Kenny.nl and OpenGameArt.org"
+align = 1
+valign = 1
+uppercase = true
+
 [connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]

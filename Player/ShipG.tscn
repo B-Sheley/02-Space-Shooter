@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Player/ShipG.gd" type="Script" id=1]
 [ext_resource path="res://Assests/Exhuast.png" type="Texture" id=2]
-[ext_resource path="res://Assests/ship_G.png" type="Texture" id=3]
+[ext_resource path="res://Assests/ship-1 (1).png" type="Texture" id=3]
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 1 )
@@ -15,11 +15,11 @@ texture = ExtResource( 2 )
 texture = ExtResource( 3 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PoolVector2Array( 5, -25.2, 5, -22.5, 28.3, 17, 27.2, 19, 25.9, 19, 17.9, 28, 14.1, 28, 7.1, 20, -6, 20, -16.8, 28.3, -19, 27.2, -19, 25.9, -28, 17.9, -28, 14.4, -3, -25.6, -3, -29.2 )
+polygon = PoolVector2Array( 18, -25.8, 18, -24, 32, -14.5, 32, 14, 11, 32, -10, 32, -32, 14.6, -32, -14.8, -28.8, -18, -24.8, -18, -16.8, -26, -8, -26, -8, -28.2 )
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
-polygon = PoolVector2Array( -2, -29, 5, -25, 31, 15, 28, 23, 20, 31, 12, 31, 5, 23, -4, 23, -15, 34, -32, 19, -32, 13 )
+polygon = PoolVector2Array( -6, -28, 5, -28, 18, -24, 33, -14, 33, 13, 11, 32, -10, 32, -33, 13, -33, -13 )
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

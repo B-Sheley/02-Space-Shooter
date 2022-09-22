@@ -13,7 +13,6 @@ texture = ExtResource( 2 )
 polygon = PoolVector2Array( 4.5, 18.5, -4.5, 18.5, -4.5, -18.5, 4.5, -18.5 )
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 0.75
 autostart = true
 
 [connection signal="body_entered" from="." to="." method="_on_Bullet_body_entered"]

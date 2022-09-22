@@ -7,3 +7,4 @@ func _ready():
 	Global.update_score(0)
 
 
+

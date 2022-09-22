@@ -3,10 +3,10 @@ extends KinematicBody2D
 
 var velocity = Vector2.ZERO
 var speed = 3
-var max_speed = 300
+var max_speed = 200
 var rot_speed = 4
 var nose = Vector2(0,-60)
-var health = 90
+var health = 200
 
 onready var Bullet = load("res://Player/Bullet_Blue.tscn")
 onready var Explosion = load("res://Effects/Explosion.tscn")

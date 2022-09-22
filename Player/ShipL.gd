@@ -6,9 +6,9 @@ var speed = 5
 var max_speed = 400
 var rot_speed = 5
 var nose = Vector2(0,-60)
-var health = 60
+var health = 180
 
-onready var Bullet = load("res://Player/Bullet_Green.tscn")
+onready var Bullet = load("res://Player/Bullet_Red.tscn")
 onready var Explosion = load("res://Effects/Explosion.tscn")
 
 var Effects = null
