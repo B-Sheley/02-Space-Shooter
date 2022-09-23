@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 var velocity = Vector2(0,-100)
 var health = 1
-var score = 10
+var score = 5
 
 func _ready():
 	velocity.rotated(randf()*2*PI)

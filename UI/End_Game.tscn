@@ -1,28 +1,43 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://UI/End_Game.gd" type="Script" id=1]
+[ext_resource path="res://Assests/Background.png" type="Texture" id=2]
 
 [node name="End_Game" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
 
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+
 [node name="Label" type="Label" parent="."]
 anchor_right = 1.0
-margin_bottom = 400.0
+margin_bottom = 90.0
 text = "Thanks for Playing! Your Score Was"
 align = 1
 valign = 1
+uppercase = true
 
 [node name="Play" type="Button" parent="."]
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.5
+anchor_bottom = 1.0
 margin_left = -75.0
-margin_top = -20.0
+margin_top = -40.0
 margin_right = 75.0
-margin_bottom = 20.0
 text = "Play Again?"
+
+[node name="Scores" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 92.0
+margin_bottom = -60.0
+align = 1
+valign = 1
 
 [connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]

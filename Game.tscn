@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Player/Player_Container.gd" type="Script" id=1]
 [ext_resource path="res://Asteroid/Asteroid_Container.gd" type="Script" id=2]
@@ -7,9 +7,21 @@
 [ext_resource path="res://Enemy/Enemy2_Container.gd" type="Script" id=5]
 [ext_resource path="res://Enemy/Enemy3_Container.gd" type="Script" id=6]
 [ext_resource path="res://Enemy/Boss_Container.gd" type="Script" id=7]
+[ext_resource path="res://Assests/Background.png" type="Texture" id=8]
 
 [node name="Game" type="Node2D"]
 script = ExtResource( 4 )
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1024.0
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+margin_right = 1024.0
+margin_bottom = 600.0
+texture = ExtResource( 8 )
+expand = true
 
 [node name="Player_Container" type="Node2D" parent="."]
 script = ExtResource( 1 )

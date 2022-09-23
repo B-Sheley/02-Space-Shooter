@@ -5,6 +5,8 @@ onready var Enemy_Bullet_F = load("res://Enemy/Enemy_Bullet_F.tscn")
 var nose = Vector2(0,-60)
 var health = 20
 var score = 50
+var direction = Vector2(3,0)
+var wobble = 8.0
 
 func _ready():
 	pass 
@@ -27,3 +29,10 @@ func _on_Bullet_F_timeout():
 		enemy_bullet_F.global_position = global_position + nose.rotated(dir)
 		enemy_bullet_F.rotation = dir
 		Effects.add_child(enemy_bullet_F)
+		$AudioStreamPlayer2D.play()
+
+func _physics_process(_delta):
+	position += direction
+	position.y = position.y + sin(position.x/20)*wobble
+	if position.x >= Global.VP.x + 200:
+		queue_free()

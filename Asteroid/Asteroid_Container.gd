@@ -5,7 +5,7 @@ var positions = [Vector2(100,100),Vector2(800,100), Vector2(500,500), Vector2(70
 
 
 func _physics_process(_delta):
-	if get_child_count() < 4:
+	if get_child_count() < 12:
 		var asteroid = Asteroid.instance()
 		asteroid.position = positions[randi()  % positions.size()]
 		add_child(asteroid)

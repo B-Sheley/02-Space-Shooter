@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Asteroid/Asteroid.gd" type="Script" id=1]
-[ext_resource path="res://Assests/Asteroid.png" type="Texture" id=2]
+[ext_resource path="res://Assests/meteorGrey_med2.png" type="Texture" id=2]
 
 [node name="Asteroid" type="KinematicBody2D"]
 script = ExtResource( 1 )
@@ -10,4 +10,4 @@ script = ExtResource( 1 )
 texture = ExtResource( 2 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PoolVector2Array( 21, -17.3, 21, -14.3, 29.1, 4, 26.3, 4, 20.3, 18, 18.6, 18, 2.6, 28, -2.5, 28, -21, 17.1, -21, 14.3, -29.1, -4, -26.2, -4, -17.2, -21, -14.5, -21, -4, -26.2, -4, -29.2 )
+polygon = PoolVector2Array( 22.5, -10, 22.5, 5.2, 12.9, 20, -13.5, 20, -13.5, 18.9, -22.5, 10.7, -22.5, -7.6, -16.8, -20, -11.8, -20, 13.5, -20 )
